@@ -206,3 +206,14 @@ Fri 19 Aug 2022 05:29:14 PM UTC:
  tests:  9|3
 total_score: 35/70
 f5b4c09
+Fri 19 Aug 2022 05:29:46 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:71:7: error: statement with no effect [-Werror=unused-value]
+   71 |   list->current;
+      |   ~~~~^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d002fe0
