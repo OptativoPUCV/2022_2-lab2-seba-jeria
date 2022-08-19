@@ -35,8 +35,8 @@ List * createList() {
 
 void * firstList(List * list) {
   if(!list->firstList) return NULL;
-list->current=list->firsList;
-  return (list->firstLista->data);
+  list->current=list->firsList;
+  return (list->firstList->data);
 }
 
 void * nextList(List * list) {
