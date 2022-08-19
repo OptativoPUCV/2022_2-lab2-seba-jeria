@@ -40,14 +40,14 @@ void * firstList(List * list) {
   if(!list->head) 
     return NULL;
   list->current=list->head;
-  return (list->current->data);
+  return (list->head->data);
 }
 
 void * nextList(List * list) {
   if (!list->tail)
     return NULL;
   list->current=list->tail;
-  return(list->current->data);
+  return(list->tail->data);
 }
 
 void * lastList(List * list) {
