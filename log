@@ -217,3 +217,9 @@ list.c:71:7: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 d002fe0
+Fri 19 Aug 2022 05:30:17 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  9|3
+total_score: 35/70
+9fb9512
