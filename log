@@ -76,3 +76,19 @@ Fri 19 Aug 2022 04:52:40 PM UTC:
  tests:  1|5
 total_score: 10/70
 fd70a23
+Fri 19 Aug 2022 04:57:27 PM UTC: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:37:11: error: ‘List’ {aka ‘struct List’} has no member named ‘firstList’
+   37 |   if(!list->firstList)
+      |           ^~
+list.c:39:21: error: ‘List’ {aka ‘struct List’} has no member named ‘firstList’
+   39 |   list->current=list->firstList;
+      |                     ^~
+list.c:40:15: error: ‘List’ {aka ‘struct List’} has no member named ‘firstList’
+   40 |   return (list->firstList->data);
+      |               ^~
+Compilation failed
+b0d0b30
