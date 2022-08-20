@@ -99,7 +99,6 @@ void * popCurrent(List * list) {
   }
 	else
 		list->head = list->current->next;
-  list->head->prev=NULL;
   return list->current->data;
 }
 
