@@ -302,3 +302,9 @@ list.c:82:9: error: unused variable ‘n’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 47beecc
+Sat 20 Aug 2022 02:04:13 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 45/70
+3d6e9ce
