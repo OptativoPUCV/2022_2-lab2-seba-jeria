@@ -291,3 +291,14 @@ Sat 20 Aug 2022 01:58:00 AM UTC:
  1 file changed, 3 insertions(+), 1 deletion(-)
  tests:  0|0
 e55d2d7
+Sat 20 Aug 2022 02:03:55 AM UTC: 
+ list.c | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:82:9: error: unused variable ‘n’ [-Werror=unused-variable]
+   82 |   Node* n=createNode(data);
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+47beecc
