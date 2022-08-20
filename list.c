@@ -99,7 +99,7 @@ void * popCurrent(List * list) {
   }
 	else
 		list->head = list->current->next;
-  return list->current;
+  return list->current->data;
 }
 
 void cleanList(List * list) {
