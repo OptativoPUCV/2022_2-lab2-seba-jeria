@@ -93,7 +93,13 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    return NULL;
+  if(list->current->prev != NULL){
+		list->current->prev->next = list->current->next;
+		list->current->next->prev = list->current->prev;
+  }
+	else
+		list->head = list->current->next;
+  return list->current;
 }
 
 void cleanList(List * list) {
