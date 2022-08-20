@@ -308,3 +308,20 @@ Sat 20 Aug 2022 02:04:13 AM UTC:
  tests:  10|2
 total_score: 45/70
 3d6e9ce
+Sat 20 Aug 2022 02:07:06 AM UTC: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:84:12: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   84 |     return NULL;
+      |            ^~~~
+list.c:81:6: note: declared here
+   81 | void pushCurrent(List * list, void * data) {
+      |      ^~~~~~~~~~~
+list.c:82:9: error: unused variable ‘n’ [-Werror=unused-variable]
+   82 |   Node* n=createNode(data);
+      |         ^
+cc1: all warnings being treated as errors
+Compilation failed
+bc00277
